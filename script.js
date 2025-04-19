@@ -4,7 +4,7 @@ const segundos = document.getElementById('segundos')
 
 const relogio = setInterval(function time() {
 let dateToday = new Date();
-let hr = dateToday.getHours();
+let hr = dateToday.getSeconds();
 let min = dateToday.getMinutes();
 let s = dateToday.getSeconds();
 
