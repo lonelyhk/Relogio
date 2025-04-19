@@ -1,140 +1,55 @@
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+html {
+  height: 100%;
+  width: 100%;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+    font-family: 'Open Sans', sans-serif;
 }
 
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 1em;
-    text-align: center;
-}
-
-main {
-    padding: 1em;
-}
-
-#client-list {
-    margin-top: 20px;
-}
-
-#clients-container {
+body {
+    height: 84.5vh;
+    background: linear-gradient(120deg, #ffe53bd8, #ff2525da);
     display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
+    align-items: center;
     justify-content: center;
 }
 
-.client-card {
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    padding: 1em;
-    width: 200px;
-    text-align: center;
+.relogio {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 130px;
+    width: 320px;
+    background: transparent;
+    border-radius: 5px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, .5);
 }
 
-.client-card h3 {
-    margin-bottom: 0.5em;
-    color: #333;
-}
-
-.client-card p {
-    color: #666;
-    margin: 0.25em 0;
-}
-
-.client-card .expiration-warning {
-    color: red;
-    font-weight: bold;
-}
-
-footer {
-    text-align: center;
-    padding: 1em;
-    background-color: #333;
+.relogio div {
+    height: 120px;
+    width: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     color: #fff;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    background: rgba(5, 5, 5, .9);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, .7);
+    border-radius: 7px;
+    letter-spacing: 3px;
 }
 
-#add-client-button {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 20px;
-    margin-top: 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1em;
+.relogio span {
+    font-weight: bolder;
+    font-size: 60px;
+
 }
 
-#add-client-button:hover {
-    background-color: #3e8e41;
+.relogio span.tempo {
+    font-size: 15px;
 }
-
-
-/* Estilos para o formulário de adicionar cliente */
-.modal {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 1;
-}
-
-.modal-content {
-    position: relative;
-    background-color: #fefefe;
-    margin: 15% auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-    border-radius: 5px;
-}
-
-.close-button {
-    position: absolute;
-    top: 0;
-    right: 0;
-    padding: 10px;
-    cursor: pointer;
-    font-size: 1.5em;
-}
-
-/* Estilos para dispositivos móveis */
-@media (max-width: 600px) {
-    header {
-        padding: 0.5em;
-    }
-
-    header h1 {
-        font-size: 1.5em;
-    }
-
-    main {
-        padding: 0.5em;
-    }
-
-    .client-card {
-        width: 90%;
-    }
-
-    #add-client-button {
-        width: 100%;
-        padding: 15px;
-        font-size: 1.2em;
-    }
-
-    .modal-content {
-        margin: 25% auto;
-    }
-}
-
